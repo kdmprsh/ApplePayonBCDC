@@ -1,0 +1,30 @@
+REGISTRY := docker.io/pareshkadam
+IMAGE    := applepay-spb
+TAG      := latest
+PLATFORM := linux/amd64
+BUILDER  := rancher-desktop
+DOCKERFILE := Dockerfile.render
+
+IMAGE_REF := $(REGISTRY)/$(IMAGE):$(TAG)
+
+# Set these in your shell environment, not here (avoid committing secrets):
+#   export RENDER_API_KEY=rnd_xxxxxxxx
+#   export RENDER_SERVICE_ID=srv-xxxxxxxx   # from the Render dashboard, service Settings page
+
+.PHONY: build push deploy all
+
+build:
+	docker buildx build --builder $(BUILDER) --platform $(PLATFORM) -f $(DOCKERFILE) -t $(IMAGE_REF) --load .
+
+push:
+	docker buildx build --builder $(BUILDER) --platform $(PLATFORM) -f $(DOCKERFILE) -t $(IMAGE_REF) --push .
+
+deploy: push
+	@test -n "$(RENDER_API_KEY)" || (echo "RENDER_API_KEY is not set" && exit 1)
+	@test -n "$(RENDER_SERVICE_ID)" || (echo "RENDER_SERVICE_ID is not set" && exit 1)
+	curl -sS -X POST "https://api.render.com/v1/services/$(RENDER_SERVICE_ID)/deploys" \
+		-H "Authorization: Bearer $(RENDER_API_KEY)" \
+		-H "Content-Type: application/json" \
+		-d '{"clearCache": false}'
+
+all: build push

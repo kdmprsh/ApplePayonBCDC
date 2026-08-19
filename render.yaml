@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: applepay-spb
+    runtime: image
+    image:
+      url: docker.io/pareshkadam/applepay-spb:latest
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8080
