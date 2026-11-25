@@ -38,10 +38,10 @@
             "client_id"     => "AaC8rG_01y0isV79HWx5QK2_cPLC58JE2RekM7SOF1ZNGWe6JNIf0kXgnWIbRJhupSMn3B19SqqD5ZmS",
             "client_secret" => "EHslNykrNNlJrXA4GowLSmNRat97tRWiOaARGqh-qoIkXKgKoJfJW9QLuYWkTCNbD7GPeRfT1JPCSmR4",
         ],
-		// PayPal REST App ZA Merchant (South Africa Seller) (southafricaone@paresh.com / MMVKJZQN2ZEWL)
+		// PayPal REST App ZA Merchant (Basic ApplePay) (southafrica_applepay@paresh.com / NG4VT9LAX88UQ)
         "ZA" => [
-            "client_id"     => "ATZrOtZPQNIhdtjUnCHaSOYiXscogs9JvAlstYp4-PE1F0p94K6AziL16WISxlgarulVk_U8AAVWd_H6",
-            "client_secret" => "EBzUdWAqMvbUw5u7O2gU1H83aZ6lxJa4vBRW_2j52lCfQe3EsUNrFvjBhtWlgqwCCnRCwyicML7F6E0L",
+            "client_id"     => "BAANGmH-lUY0NunVb0GXKulJuIc8PFu7UexcdwX319jvNiTTbVNOPmXFYq-Vyf9lTvTSMUDpnb3aRo30I8",
+            "client_secret" => "EAvIkNjQi1sUC-R4MeP78i5uIitsnQk5T2VIVGNvrMgDTQdtirSTyUXqgoVy4H-6PL8Pjns7SvtZIc5U",
         ],
 		// PayPal REST App MA Merchant (Morocco Seller) (morocco_business@paresh.com / 77MAYVTHFSKNU)
         "MA" => [
