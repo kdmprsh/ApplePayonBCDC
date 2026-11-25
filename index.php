@@ -129,6 +129,8 @@ header('Content-Type: text/html; charset=utf-8');
           <option value="IN">India (IN)</option>
           <option value="AE">UAE (AE)</option>
           <option value="SG" selected>Singapore (SG)</option>
+          <option value="ZA">South Africa (ZA)</option>
+          <option value="MA">Morocco (MA)</option>
         </select>
 
         <div class="section-label">Integration</div>
