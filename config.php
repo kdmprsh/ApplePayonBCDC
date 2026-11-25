@@ -38,6 +38,16 @@
             "client_id"     => "AaC8rG_01y0isV79HWx5QK2_cPLC58JE2RekM7SOF1ZNGWe6JNIf0kXgnWIbRJhupSMn3B19SqqD5ZmS",
             "client_secret" => "EHslNykrNNlJrXA4GowLSmNRat97tRWiOaARGqh-qoIkXKgKoJfJW9QLuYWkTCNbD7GPeRfT1JPCSmR4",
         ],
+		// PayPal REST App ZA Merchant (South Africa Seller) (southafricaone@paresh.com / MMVKJZQN2ZEWL)
+        "ZA" => [
+            "client_id"     => "ATZrOtZPQNIhdtjUnCHaSOYiXscogs9JvAlstYp4-PE1F0p94K6AziL16WISxlgarulVk_U8AAVWd_H6",
+            "client_secret" => "EBzUdWAqMvbUw5u7O2gU1H83aZ6lxJa4vBRW_2j52lCfQe3EsUNrFvjBhtWlgqwCCnRCwyicML7F6E0L",
+        ],
+		// PayPal REST App MA Merchant (Morocco Seller) (morocco_business@paresh.com / 77MAYVTHFSKNU)
+        "MA" => [
+            "client_id"     => "BAAUeoyI2hmRYSYKkeSc05vwGX-JoUi4fZ5XWqPHMQbXeO9rz4MZYSR8srJo9M8aMm6uxiZi8EzJA9UNDg",
+            "client_secret" => "EB2ZhQhERd9uOowhUuKV1DwWjGRpYSwj6e4OiA0xPyWiBSnMW_YGbZ5-cviyQDI0ZW1Oe3CereH8fL7o",
+        ],
     ];
 
     /**
